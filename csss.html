@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Properties Example</title>
+<style>
+  /* Background color */
+  .background-color {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* Background image */
+  .background-image {
+    background-image: url('https://via.placeholder.com/150');
+    background-size: cover;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Background repeat */
+  .background-repeat {
+    background-image: url('https://via.placeholder.com/50');
+    background-repeat: repeat;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* Background position */
+  .background-position {
+    background-image: url('https://via.placeholder.com/150');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* Background attachment */
+  .background-attachment {
+    background-image: url('https://via.placeholder.com/150');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<div class="background-color">
+  Background Color
+</div>
+
+<div class="background-image">
+  Background Image
+</div>
+
+<div class="background-repeat">
+  Background Repeat
+</div>
+
+<div class="background-position">
+  Background Position (bottom-right)
+</div>
+
+<div class="background-attachment">
+  Background Attachment (fixed)
+</div>
+
+</body>
+</html>

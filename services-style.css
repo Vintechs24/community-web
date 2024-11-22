@@ -1,0 +1,218 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('images/services-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(108, 92, 231, 0.9);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+header h1:hover {
+    color: #e1b12c;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #e1b12c;
+}
+
+/* Services Page Main Section */
+.services-detail {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Heading */
+.services-detail h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.services-detail h2:hover {
+    color: #6c5ce7;
+}
+
+/* Service Detail Section */
+.service-detail {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 35px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-detail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Service Image */
+.service-detail img {
+    max-width: 80%;  /* Adjusts width for better control */
+    max-height: 300px; /* Set max-height for better image size */
+    object-fit: cover;  /* Ensures image doesn't stretch */
+    height: auto;
+    flex-basis: 45%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease;
+}
+
+/* Service Text */
+.service-detail .service-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+}
+
+.service-detail h3 {
+    font-size: 2.2em;
+    color: #6c5ce7;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.service-detail h3:hover {
+    color: #e1b12c;
+    text-decoration: underline;
+}
+
+.service-detail p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.service-detail ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-detail ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.service-detail ul li strong {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-detail {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .service-detail img {
+        max-width: 90%; /* Slightly larger images on smaller screens */
+        max-height: 250px; /* Adjust image height */
+        margin-bottom: 20px;
+    }
+
+    .service-detail .service-text {
+        flex-basis: 100%;
+    }
+
+    .services-detail {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+footer .social-links {
+    margin-top: 15px;
+}
+
+footer .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+footer .social-links a:hover {
+    color: #6c5ce7;
+}
+
+/* Button and Link Interaction Styles */
+button, a {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover, a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom Cursor */
+body, button, a {
+    cursor: pointer;
+}

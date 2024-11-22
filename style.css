@@ -1,0 +1,464 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    cursor: pointer; /* Cursor effect */
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('images/banner.jpg'); /* Replace with your banner image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+
+.banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.25rem;
+}
+
+/* Welcome Section */
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.welcome .content {
+    width: 50%;
+}
+
+.welcome h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.welcome .image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Quote Section */
+.quote {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-style: italic;
+}
+
+.quote blockquote {
+    font-size: 1.5rem;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Basic styling for the gallery section */
+.gallery {
+    overflow: hidden; /* Hide overflow for smooth sliding */
+    width: 100%; /* Full width of the container */
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.gallery p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: flex; /* Flexbox layout for continuous scrolling */
+    animation: slideLeft 20s linear infinite; /* Sliding animation */
+    gap: 10px; /* Optional: Spacing between images */
+}
+
+.gallery-grid img {
+    width: 150px; /* Adjust the size of the images */
+    height: 150px;
+    object-fit: cover; /* Crop the image to fit its container */
+    flex-shrink: 0; /* Prevent shrinking */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Image shadow */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0); /* Start position */
+    }
+    100% {
+        transform: translateX(-100%); /* Slide left completely */
+    }
+}
+
+/* Call-to-action button styling */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+/* "View More" Button */
+.view-more-btn {
+    display: block;
+    width: 150px; /* Fixed and more reasonable width */
+    margin: 20px auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .welcome {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .welcome .content, .welcome .image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .banner h2 {
+        font-size: 2rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center; /* Center images in column layout */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h2 {
+        font-size: 1.8rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center; /* Center images in column layout */
+    }
+
+    .services .service img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Call to Action Button */
+.cta-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer; /* Cursor effect */
+}
+
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Featured Services Section */
+.services {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.services .service {
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease-in-out; /* Smooth scale on hover */
+}
+
+/* Services Section */
+.services .service img {
+    width: 100%; /* Ensure the image takes up the full width */
+    height: 300px; /* Set a fixed height to give more space to the images */
+    object-fit: cover; /* Make the image cover the entire area without stretching */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design for Services Section */
+@media (max-width: 768px) {
+    .services .service img {
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
+
+.services .service:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.services .service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.services .service p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Upcoming Events Section */
+.events {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+}
+
+.events ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.events ul li {
+    margin-bottom: 0.8rem;
+}
+
+.events a.cta-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer; /* Cursor effect */
+}
+
+.events a.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Service Section: Hover Effects */
+.services .service:hover {
+    transform: translateY(-10px); /* Lifts the card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+}
+
+/* Cursor effect on hover for all clickable items */
+a, .cta-button, .services .service img {
+    cursor: pointer; /* Pointer cursor effect */
+}
+
+/* Newsletter Overlay */
+.newsletter-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it's on top */
+    overflow-y: auto; /* Allow scrolling */
+}
+
+/* Newsletter Popup Content */
+.newsletter-popup {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.3s ease-in-out; /* Popup animation */
+    overflow-y: auto; /* Allow scrolling inside the popup if content overflows */
+    max-height: 80vh; /* Limit the height of the popup */
+}
+
+/* Newsletter Header */
+.newsletter-popup h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Close Button */
+.close-newsletter-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-newsletter-btn:hover {
+    color: #e1b12c; /* Hover color change */
+}
+
+/* Newsletter Form */
+#newsletterForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Email Input */
+#email {
+    padding: 10px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#email:focus {
+    border-color: #6c5ce7;
+}
+
+/* Subscribe Button */
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #6c5ce7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4e3fbe; /* Darker button color on hover */
+}
+
+/* Animation for Popups */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
